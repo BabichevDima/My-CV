@@ -43,7 +43,7 @@ export function Skills() {
         <Sections>Additional information </Sections>
         <p>
           Portfolio:{" "}
-          <Link href="https://github.com/BabichevDima"> My GitHub</Link>
+          <Link target="_blank" href="https://github.com/BabichevDima"> My GitHub</Link>
         </p>
       </div>
 

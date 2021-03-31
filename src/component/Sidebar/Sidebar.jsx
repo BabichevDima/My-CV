@@ -20,14 +20,12 @@ export function Sidebar() {
         <Sections /*onClick={showDescription}*/>Summary</Sections>
         {show ? (
           <p>
-            By education I am a civil engineer, a couple of years ago I got
-            carried away with programming. When I realized that programming as a
+            A year ago, programming became one of my main hobbies. I started
+            learning HTML, CSS on my own. When I realized that programming as a
             hobby was not enough for me, I signed up for a front-end developer
-            course. I learn quickly because I love it. I am persistent and
-            highly motivated. Programming became one of my main hobbies a year
-            ago. I started to learn HTML, CSS by myself. I strive for high
-            results, because I want to change not only my profession, but also
-            my life.
+            course. I am a fast learner because I love it. I am persistent and
+            very motivated. I strive for high results, because I want to change
+            not only my profession, but also my life.
           </p>
         ) : null}
       </div>
@@ -51,16 +49,6 @@ export function Sidebar() {
           My level of English is A1. I am constantly improving my English. I
           read books, watch you-tube channels and use applications.
         </b>
-      </div>
-      <div>
-        <Sections /*onClick={showDescription}*/>References</Sections>
-        {show ? (
-          <ul>
-            <li>
-              My trainer <a href="#">Тут может будет ссылка на Linkdin Арса</a>
-            </li>
-          </ul>
-        ) : null}
       </div>
     </Container>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import MyPhoto from "../../../src/images/MyPhoto.jpg";
+import MyPhoto from "../../../src/images/MyPhoto2.jpeg";
 
 export function Contact() {
   return (
@@ -27,11 +27,20 @@ export function Contact() {
           </li>
           <li>
             <b>GitHub: </b>
-            <Link href="https://github.com/BabichevDima"> My GitHub</Link>
+            <Link target="_blank" href="https://github.com/BabichevDima">
+              {" "}
+              My GitHub
+            </Link>
           </li>
           <li>
             <b>LinkedIn: </b>
-            <Link href="https://github.com/BabichevDima"> My LinkedIn</Link>
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/dmitry-babichev-64a431207/"
+            >
+              {" "}
+              My LinkedIn
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
 
-import MyPhoto from "../../../src/images/MyPhoto.jpg";
+import MyPhoto from "../../../src/images/MyPhoto2.jpeg";
 
 // const toBase64 = (file) =>
 //   new Promise((resolve, reject) => {
