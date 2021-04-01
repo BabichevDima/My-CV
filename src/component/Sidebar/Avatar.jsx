@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "@emotion/styled";
 
 import MyPhoto from "../../../src/images/MyPhoto2.jpeg";
+import QrCode from "../../../src/images/Qrcode.jpg";
 
 // const toBase64 = (file) =>
 //   new Promise((resolve, reject) => {
@@ -26,6 +27,7 @@ export function Avatar() {
     <Container>
       <Img src={MyPhoto} alert="avatar" />
       {/* <input type="file" onChange={onMainPhotoSelected} /> */}
+      <ImgQrCode src={QrCode} alert="Qrcode" />
     </Container>
   );
 }
@@ -40,4 +42,12 @@ const Container = styled.div`
 const Img = styled.img`
   max-height: 300px;
   image-rendering: auto;
+  position: relative;
+`;
+const ImgQrCode = styled.img`
+  position: absolute;
+  height: 70px;
+  image-rendering: auto;
+  top: 335px;
+  left: 38px;
 `;

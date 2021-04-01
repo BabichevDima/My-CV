@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
+import { Trans, useTranslation } from "react-i18next";
 
 import { Avatar } from "./Avatar";
 
 export function Sidebar() {
+  const { t, i18n } = useTranslation();
   const [show, setShow] = useState(true);
 
   // const showDescription = () => {
@@ -17,21 +19,16 @@ export function Sidebar() {
     <Container>
       <Avatar />
       <div>
-        <Sections /*onClick={showDescription}*/>Summary</Sections>
-        {show ? (
-          <p>
-            A year ago, programming became one of my main hobbies. I started
-            learning HTML, CSS on my own. When I realized that programming as a
-            hobby was not enough for me, I signed up for a front-end developer
-            course. I am a fast learner because I love it. I am persistent and
-            very motivated. I strive for high results, because I want to change
-            not only my profession, but also my life.
-          </p>
-        ) : null}
+        <Sections /*onClick={showDescription}*/>
+          {t("description.part2")}
+        </Sections>
+        {show ? <p>{t("description.part3")}</p> : null}
       </div>
 
       <div>
-        <Sections /*onClick={showDescription}*/>Skills</Sections>
+        <Sections /*onClick={showDescription}*/>
+          {t("description.part4")}
+        </Sections>
         {show ? (
           <ul>
             <li>React</li>
@@ -45,10 +42,7 @@ export function Sidebar() {
         ) : null}
       </div>
       <div style={{ marginBottom: "10px" }}>
-        <b>
-          My level of English is A1. I am constantly improving my English. I
-          read books, watch you-tube channels and use applications.
-        </b>
+        <b>{t("description.part5")}</b>
       </div>
     </Container>
   );

@@ -42,7 +42,7 @@ const Container = styled.div`
     position: absolute;
     bottom: 0px;
     left: 0px;
-    height: 150px;
+    height: 100px;
     width: 100%;
     z-index: -1;
     @media (max-width: 1090px) {

@@ -1,58 +1,46 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { Trans, useTranslation } from "react-i18next";
 
 export function Skills() {
+  const { t, i18n } = useTranslation();
+
   return (
     <div>
       <div style={{ marginBottom: "80px" }}>
-        <Sections style={{ color: "" }}>Objective</Sections>
+        <Sections style={{ color: "" }}>{t("description.part18")}</Sections>
         <p style={{ color: "#fff", fontWeight: "500" }}>Front-end Developer</p>
       </div>
 
       <div>
-        <Sections>Education</Sections>
+        <Sections>{t("description.part8")}</Sections>
         <p>
-          <b>1.09.20 - 01.02.21</b> – Coding School TeachMeSkills Course: Front
-          End - developer Description: Development with Javascript (and also
-          React.js). During the course I learnt such technologies as JavaScript
-          and React. In my work I used some libraries: Redux, react-redux,
-          emotion/styled, axios, react-dom, react-router-dom, redux-thunk,
-          redux-form and other.
+          <b>1.09.20 - 01.02.21</b> – {t("description.part9")}
         </p>
         <p>
-          <b>1.09.11 - 23.06.16</b> – Belarusian State University of Transport
-          (Construction faculty)
+          <b>1.09.11 - 23.06.16</b> – {t("description.part10")}
         </p>
       </div>
 
       <div>
-        <Sections>Work experience</Sections>
+        <Sections>{t("description.part11")}</Sections>
+        <p>{t("description.part12")}</p>
+        <p>{t("description.part13")}</p>
+      </div>
+
+      <div>
+        <Sections>{t("description.part14")}</Sections>
         <p>
-          Period (from 2016 - to 2019) - DRSU-113, construction master: - "I
-          learned my main responsibilities in a short time. During my work here
-          I was responsible, fast accurate in calculation and became a good
-          specialist in the sphere”.
-        </p>
-        <p>
-          Period (from 2020 - to now ) - I work for myself as an individual
-          entrepreneur.
+          {t("description.part15")}:{" "}
+          <Link target="_blank" href="https://github.com/BabichevDima">
+            {t("description.part6")}
+          </Link>
         </p>
       </div>
 
       <div>
-        <Sections>Additional information </Sections>
-        <p>
-          Portfolio:{" "}
-          <Link target="_blank" href="https://github.com/BabichevDima"> My GitHub</Link>
-        </p>
-      </div>
-
-      <div>
-        <Sections>Reason for applying for a job </Sections>
-        <p>
-          Describe your real motivation for job as a Front End developer in
-          future (Why a company should hire you instead of another person?)
-        </p>
+        <Sections>{t("description.part16")}</Sections>
+        <p>{t("description.part17")}</p>
       </div>
     </div>
   );
