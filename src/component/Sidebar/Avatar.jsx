@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
 
-import MyPhoto from "../../../src/images/MyPhoto2.jpeg";
+import MyPhoto from "../../../src/images/MyPhoto.jpg";
 import QrCode from "../../../src/images/Qrcode.jpg";
 
 // const toBase64 = (file) =>
@@ -49,5 +49,5 @@ const ImgQrCode = styled.img`
   height: 70px;
   image-rendering: auto;
   top: 335px;
-  left: 38px;
+  left: 40px;
 `;

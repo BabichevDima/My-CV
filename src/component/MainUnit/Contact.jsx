@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
-import MyPhoto from "../../../src/images/MyPhoto2.jpeg";
+import MyPhoto from "../../../src/images/MyPhoto.jpg";
 import QrCode from "../../../src/images/Qrcode.jpg";
 
 export function Contact() {
