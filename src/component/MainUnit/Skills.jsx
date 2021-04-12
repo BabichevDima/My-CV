@@ -24,8 +24,10 @@ export function Skills() {
 
       <div>
         <Sections>{t("description.part11")}</Sections>
-        <p>{t("description.part12")}</p>
+        <p>{t("description.part19")}</p>
         <p>{t("description.part13")}</p>
+        <p>{t("description.part12")}</p>
+        
       </div>
 
       <div>

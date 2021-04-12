@@ -36,7 +36,6 @@ export function Header() {
             justifyContent: "space-between",
           }}
         >
-          {/* {!rus ? ( */}
           <div
             style={{
               display: "flex",
@@ -68,7 +67,6 @@ export function Header() {
               alt="Developer"
             />
           </div>
-          {/* ) : ( */}
           <div
             style={{
               display: "flex",
@@ -100,7 +98,6 @@ export function Header() {
               alt="Developer"
             />
           </div>
-          {/* )} */}
         </div>
       </div>
       <Container>

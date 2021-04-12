@@ -31,13 +31,30 @@ export function Sidebar() {
         </Sections>
         {show ? (
           <ul>
-            <li>React</li>
+            <li>HTML5</li>
+            <li>CSS3 (Sass)</li>
             <li>JavaScript</li>
-            <li>GIT</li>
-            <li>HTML</li>
-            <li>CSS, Sass</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <ul>
+              <li>redux</li>
+              <li>react-redux</li>
+              <li>emotion/styled</li>
+              <li>axios</li>
+              <li>react-dom</li>
+              <li>react-router-dom</li>
+              <li>redux-thunk</li>
+              <li>redux-form</li>
+              <li>i18next</li>
+              <li>react-bootstrap</li>
+              <li>react-spring</li>
+            </ul>
+            <li>GIT (GitHub)</li>
+            <li>Webpack</li>
             <li>Photoshop</li>
             <li>Figma</li>
+            <li>npm</li>
+            <li>Basic understanding of Java</li>
           </ul>
         ) : null}
       </div>
