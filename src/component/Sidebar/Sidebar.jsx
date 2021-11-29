@@ -1,65 +1,38 @@
-import React, { useState } from "react";
-import styled from "@emotion/styled";
-import { Trans, useTranslation } from "react-i18next";
+import React, { useState } from 'react';
+import styled from '@emotion/styled';
+import { Trans, useTranslation } from 'react-i18next';
 
-import { Avatar } from "./Avatar";
+import { Avatar } from './Avatar';
 
 export function Sidebar() {
   const { t, i18n } = useTranslation();
-  const [show, setShow] = useState(true);
-
-  // const showDescription = () => {
-  //   if (!show) {
-  //     return setShow(true);
-  //   }
-  //   return setShow(false);
-  // };
 
   return (
     <Container>
       <Avatar />
       <div>
-        <Sections /*onClick={showDescription}*/>
-          {t("description.part2")}
-        </Sections>
-        {show ? <p>{t("description.part3")}</p> : null}
+        <Sections>{t('description.part2')}</Sections>
+        <p>{t('description.part3')}</p>
       </div>
 
       <div>
-        <Sections /*onClick={showDescription}*/>
-          {t("description.part4")}
-        </Sections>
-        {show ? (
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3 (Sass)</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <ul>
-              <li>redux</li>
-              <li>react-redux</li>
-              <li>emotion/styled</li>
-              <li>axios</li>
-              <li>react-dom</li>
-              <li>react-router-dom</li>
-              <li>redux-thunk</li>
-              <li>redux-form</li>
-              <li>i18next</li>
-              <li>react-bootstrap</li>
-              <li>react-spring</li>
-            </ul>
-            <li>GIT (GitHub)</li>
-            <li>Webpack</li>
-            <li>Photoshop</li>
-            <li>Figma</li>
-            <li>npm</li>
-            <li>Basic understanding of Java</li>
-          </ul>
-        ) : null}
+        <Sections>{t('description.part4')}</Sections>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 (Sass/Less/Scss)</li>
+          <li>JavaScript (ECMAScript 5-7)</li>
+          <li>Node.js</li>
+          <li>Basic understanding of React</li>
+          <li>GIT (GitHub)</li>
+          <li>NPM, Yarn</li>
+          <li>Webpack</li>
+          <li>Photoshop</li>
+          <li>Figma</li>
+          <li>Visual Studio Code</li>
+        </ul>
       </div>
-      <div style={{ marginBottom: "10px" }}>
-        <b>{t("description.part5")}</b>
+      <div style={{ marginBottom: '10px' }}>
+        <b>{t('description.part5')}</b>
       </div>
     </Container>
   );

@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import styled from "@emotion/styled";
-import { useTranslation } from "react-i18next";
+import React, { useState } from 'react';
+import styled from '@emotion/styled';
+import { useTranslation } from 'react-i18next';
 
-import Developer from "../../../src/images/Developer4.png";
-import Russia from "../../../src/images/Russia.png";
-import England from "../../../src/images/England.png";
-import { Sidebar } from "../Sidebar";
-import { MainUnit } from "../MainUnit";
+import Developer from '../../../src/images/Developer4.png';
+import Russia from '../../../src/images/Russia.png';
+import England from '../../../src/images/England.png';
+import { Sidebar } from '../Sidebar';
+import { MainUnit } from '../MainUnit';
 
 export function Header() {
   const [rus, setRus] = useState(true);
@@ -24,23 +24,23 @@ export function Header() {
     <div>
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center'
         }}
       >
-        <Img src={Developer} alt="Developer" />
+        <Img src={Developer} alt='Developer' />
         <div
           style={{
-            display: "flex",
-            justifyContent: "space-between",
+            display: 'flex',
+            justifyContent: 'space-between'
           }}
         >
           <div
             style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
             }}
           >
             <Button
@@ -48,10 +48,10 @@ export function Header() {
                 !rus
                   ? {}
                   : {
-                      backgroundColor: "#fff200",
+                      backgroundColor: '#fff200'
                     }
               }
-              onClick={() => changeLanguage("en")}
+              onClick={() => changeLanguage('en')}
             >
               EN
             </Button>
@@ -60,18 +60,18 @@ export function Header() {
                 rus
                   ? {}
                   : {
-                      display: "none",
+                      display: 'none'
                     }
               }
               src={England}
-              alt="Developer"
+              alt='Developer'
             />
           </div>
           <div
             style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
             }}
           >
             <Button
@@ -79,10 +79,10 @@ export function Header() {
                 rus
                   ? {}
                   : {
-                      backgroundColor: "#fff200",
+                      backgroundColor: '#fff200'
                     }
               }
-              onClick={() => changeLanguage("rus")}
+              onClick={() => changeLanguage('rus')}
             >
               RUS
             </Button>
@@ -91,11 +91,11 @@ export function Header() {
                 !rus
                   ? {}
                   : {
-                      display: "none",
+                      display: 'none'
                     }
               }
               src={Russia}
-              alt="Developer"
+              alt='Developer'
             />
           </div>
         </div>
@@ -105,7 +105,7 @@ export function Header() {
         <MainUnit />
       </Container>
       <div>
-        <Img src={Developer} alt="Developer" />
+        <Img src={Developer} alt='Developer' />
       </div>
     </div>
   );
